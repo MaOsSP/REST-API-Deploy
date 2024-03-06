@@ -1,6 +1,6 @@
 import { readJSON } from '../utils.js'
 import { randomUUID } from 'node:crypto'// modulo para crear id's unicas
-const movies = readJSON('../movies.json')
+const movies = readJSON('./movies.json')
 
 export class MovieModel {
   static async getAll ({ genre }) {
@@ -45,5 +45,6 @@ export class MovieModel {
       ...movies[movieIndex],
       ...input
     }
+    return movies[movieIndex]
   }
 }

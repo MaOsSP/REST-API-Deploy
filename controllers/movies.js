@@ -1,4 +1,4 @@
-import { MovieModel } from '../models/movie'
+import { MovieModel } from '../models/movie.js'
 import { validateMovie, validatePartialMovie } from '../schemas/movies.js'// validadcion de esquema de objetos json con zod
 
 export class MovieController {
